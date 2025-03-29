@@ -5,7 +5,7 @@
 #Considere que de los cubitos del problema anterior se extraen dos al azar con restitución. Si se definen las siguientes variables aleatorias o estocásticas:
 #A  = suma de caras coloreadas 		B  = máximo de caras coloreadas 
 #       encuentre:
-#las distribuciones de probabilidades: P(A), P(B), P(B/A), P(A/B), p(A,B) 
+#las distribuciones de probabilidades: P(A)<--, P(B), P(B/A), P(A/B), p(A,B) 
 #los promedios y desviaciones estándar de las distribuciones de A y de B
 #el factor de correlación y la covarianza 
 #un estimador del valor de B a partir de A mediante regresión lineal
@@ -52,4 +52,4 @@ def Calcular_Prob_A ():
             prob_act[i] = exitos[i] / N
     return prob_act
 
-print ('P(A):' + Calcular_Prob_A())
+print (Calcular_Prob_A())

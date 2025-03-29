@@ -6,13 +6,6 @@
 
 
 
-
-
-
-
-
-
-
 import random
 
 e = 0.0001

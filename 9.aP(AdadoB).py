@@ -49,13 +49,13 @@ def Calcular_Prob_AB():
                 prob_ant[i, j] = prob_act[i, j]
                 prob_act[i, j] = exitos[i, j] / N
 
-    # Calcular probabilidades marginales P(A) y P(B)
-    P_A = np.sum(prob_act, axis=1)  # Sumar por filas para obtener P(A)
-    P_B = np.sum(prob_act, axis=0)  # Sumar por columnas para obtener P(B)
+   
+    P_A = np.sum(prob_act, axis=1) 
+    P_B = np.sum(prob_act, axis=0)  
 
-    # Calcular las probabilidades condicionales
-    P_A_given_B = np.zeros_like(prob_act)  # Inicializar matriz P(A|B)
-    P_B_given_A = np.zeros_like(prob_act)  # Inicializar matriz P(B|A)
+   
+    P_A_given_B = np.zeros_like(prob_act)  
+    P_B_given_A = np.zeros_like(prob_act)  
 
     for i in range(2, 7):
         for j in range(1, 4):
@@ -66,7 +66,7 @@ def Calcular_Prob_AB():
 
     return prob_act, P_A_given_B, P_B_given_A
 
-# Ejecutar y mostrar resultados
+
 prob_AB, P_A_given_B, P_B_given_A = Calcular_Prob_AB()
 
 print("Probabilidades conjuntas P(A, B):")

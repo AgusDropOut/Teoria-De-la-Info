@@ -33,7 +33,7 @@ def converge(prob_ant, prob_act):
 def Calcular_Prob ():
 
     exitos = 0
-    N = 1
+    N = 0
     prob_ant=-1
     prob_act = 0
 
